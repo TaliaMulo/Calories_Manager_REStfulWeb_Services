@@ -1,6 +1,3 @@
-//Nofar Skouri 211939939
-//Talia Mulokandov 212615421
-
 const express = require('express');
 const connectDB = require('./database');
 const caloriesRoutes = require('./routes/caloriesRoutes');
@@ -21,8 +18,8 @@ app.use(usersRoutes);
 // Define a route for '/about' that responds with a JSON array
 app.get('/about', function (req, res) {
     res.status(200).json(
-        [{ "firstname": "Nofar", "lastname": "Skouri", "id": 211939939, "email": "nofar1608@gmail.com" },
-        { "firstname": "Talia", "lastname": "Mulokandov", "id": 212615421, "email": "taliamulo@gmail.com" }]);
+        [{ "firstname": "Nofar", "lastname": "Skouri", "email": "nofar1608@gmail.com" },
+        { "firstname": "Talia", "lastname": "Mulokandov", "email": "taliamulo@gmail.com" }]);
 });
 
 // Connect to the database and start the server
